@@ -25,6 +25,9 @@ int main(){
 
     int vowel = 0;
     int len = strlen(buf);
+    if(buf[i]>='a'&& buf[i]<='z'){
+      buf[0]=buf[0]-32;
+    }
     for(int i=0; i<len;i++){
        if(buf[i]>='a'&& buf[i]<='z'){
            if(buf[i-1]==' ')
